@@ -23,3 +23,5 @@ RUN yay --noconfirm --needed -S aarch64-linux-gnu-gcc musl aarch64-linux-musl li
 	yes | sudo pacman -Scc && yes | yay -Scc && yes | yay -c
 
 COPY build /usr/local/bin/build
+
+WORKDIR /app
