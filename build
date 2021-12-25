@@ -10,4 +10,4 @@ GOOS=linux GOARCH=386 CGO_ENABLED=1 go build -o bin/$1-gnu-linux-386 . &
 CC=aarch64-linux-gnu-gcc GOOS=linux GOARCH=arm64 CGO_ENABLED=1 go build -o bin/$1-gnu-linux-arm64 . &
 CC=aarch64-linux-musl-gcc GOOS=linux GOARCH=arm64 CGO_ENABLED=1 go build -o bin/$1-alpine-linux-arm64 .
 
-#wait $(jobs -p)
+wait $(jobs -p)
